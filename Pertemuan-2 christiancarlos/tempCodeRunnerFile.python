@@ -1,6 +1,0 @@
-class Animal:
- def __init__(self, name):
-   self.name = name
-
- def printSpeak(self):
-   print("wooof woof")

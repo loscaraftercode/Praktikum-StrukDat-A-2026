@@ -65,7 +65,7 @@ if "apple" in thistuple:
 #Update Tuple
 
 #Change Tuple Values
- x = ("apple", "banana", "cherry")
+x = ("apple", "banana", "cherry")
 y = list(x)
 y[1] = "kiwi"
 x = tuple(y)
@@ -153,3 +153,18 @@ while i < len(thistuple):
   i = i + 1 
 
 #Python - Join Tuples
+
+#join two tuples
+#untuk menggabungkan 2 tuple atau lebih dpaat menggunakan operator +
+tuple1 = ("a", "b" , "c")
+tuple2 = (1, 2, 3)
+
+tuple3 = tuple1 + tuple2
+print(tuple3) 
+
+#multiply tuples
+#yaitu jika kita ingin mengalikan 2 isi dari sebuah tuple.
+fruits = ("apple", "banana", "cherry")
+mytuple = fruits * 2
+
+print(mytuple) 
