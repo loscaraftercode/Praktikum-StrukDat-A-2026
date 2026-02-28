@@ -13,7 +13,8 @@ print("=== KONVERSI MATA UANG ===")
 
 data_tabel = []
 for kode, nilai in kurs.items():
-    data_tabel.append([kode, f"{nilai:,}".replace(",",",")])
+    if kode != "IDR":
+        data_tabel.append([kode, f"{nilai:,}".replace(",",",")])
 
 print(tabulate(data_tabel, headers=["kode", "kurs"], tablefmt="outline")) 
 
